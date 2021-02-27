@@ -7,7 +7,7 @@ package ca.sheridancollege.project;
 
 /**
  *
- * @author nicho
+ * @author Nicholas Sullivan, Satuday Febuary, 27, 2021
  */
 public enum Rank {
 
@@ -21,9 +21,9 @@ public enum Rank {
     EIGHT(8,"Eight","8"),
     NINE(9,"Nine","9"),
     TEN(10,"Ten","T"),
-    JACK(11,"Jack","J"),
-    QUEEN(12,"Queen","Q"),
-    KING(13,"King","K");
+    JACK(10,"Jack","J"),
+    QUEEN(10,"Queen","Q"),
+    KING(10,"King","K");
     
     private String displayName;
     private double value;

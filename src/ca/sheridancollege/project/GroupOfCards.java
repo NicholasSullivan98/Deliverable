@@ -33,8 +33,8 @@ public class GroupOfCards {
     public Card pickCard(){
         Random random = new Random();
         int index = random.nextInt(52);
-        System.out.println(index);
-        System.out.println(this.cards[index]);
+        //System.out.println(index);
+        //System.out.println(this.cards[index]);
         return this.cards[index];
     }
     
@@ -42,5 +42,4 @@ public class GroupOfCards {
         return c.shortString();
                
     }
-
 }//end class

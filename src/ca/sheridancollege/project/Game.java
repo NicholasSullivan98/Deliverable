@@ -19,6 +19,7 @@ public class Game {
 
     private final String name;//the title of the game
     private ArrayList<Player> players;// the players of the game
+    GameLogic gamelogic = new GameLogic();
 
     public Game(String name) {
         this.name = name;
