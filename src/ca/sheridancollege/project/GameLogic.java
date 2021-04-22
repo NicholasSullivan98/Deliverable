@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Nicholas Sullivan, Satuday Febuary, 27, 2021
+ * @author Nicholas Sullivan, Saturday Febuary, 27, 2021
  */
 public class GameLogic {
     
@@ -91,6 +91,7 @@ public class GameLogic {
     
     public void GameOver(String winner){
         System.out.println(winner);
+        System.out.println("Game Over. Run again to play again.");
         System.exit(1);
     }
     

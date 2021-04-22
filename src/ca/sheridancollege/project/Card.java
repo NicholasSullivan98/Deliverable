@@ -10,7 +10,7 @@ package ca.sheridancollege.project;
  * game. Students wishing to add to the code should remember to add themselves as a modifier.
  *
  * @author dancye
- * @author Nicholas Sullivan, Satuday Febuary, 27, 2021
+ * @author Nicholas Sullivan, Saturday Febuary, 27, 2021
  */
 public class Card {
     //default modifier for child classes

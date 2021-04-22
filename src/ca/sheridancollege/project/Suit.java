@@ -7,7 +7,7 @@ package ca.sheridancollege.project;
 
 /**
  *
- * @author Nicholas Sullivan, Satuday Febuary, 27, 2021
+ * @author Nicholas Sullivan, Saturday Febuary, 27, 2021
  */
 public enum Suit {
     

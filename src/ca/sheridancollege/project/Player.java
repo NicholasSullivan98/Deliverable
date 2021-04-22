@@ -10,7 +10,7 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
- * @author Nicholas Sullivan, Satuday Febuary, 27, 2021
+ * @author Nicholas Sullivan, Saturday Febuary, 27, 2021
  */
 public class Player {
 

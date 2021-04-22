@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 /**
  *
- * @author Nicholas Sullivan, Satuday Febuary, 27, 2021
+ * @author Nicholas Sullivan, Saturday Febuary, 27, 2021
+ * @author Nicholas Sullivan, Tuedsay April, 20, 2021
  */
 public class BlackJack {
     
@@ -21,6 +22,7 @@ public class BlackJack {
         Player player1 = new Player(player);
         System.out.println("\nWelcome "+player1.getName() +"\nLet's get started.\n");
         System.out.println("Rules: Dealer always stands on 17. Aces are only worth 1.");
+        System.out.println("Game will start in 5 seconds.");
         game1.gamelogic.delay(5000);
         
         game1.gamelogic.newDealerCard();
@@ -56,11 +58,33 @@ public class BlackJack {
             game1.gamelogic.winCheck();
         }
         game1.gamelogic.standWinCheck();
-        //System.out.println("Dealers Cards: ");
-        //System.out.println(group1.shortString(dealerCard1));
+    }
+    
+    public static boolean checkDealerCardCreation(int CreateCardCall){
         
-        //System.out.println("Players Cards: ");
-        //System.out.println(group1.shortString(playerCard1));
-        //System.out.println(group1.shortString(playerCard2));
+        Game gameTest = new Game("BlackJack");
+        boolean DealerCardCreated = false;
+        int tempSize = gameTest.gamelogic.DealersCards.size();
+        if (CreateCardCall == 1){
+            gameTest.gamelogic.newDealerCard();
+        }
+        if(tempSize < gameTest.gamelogic.DealersCards.size()){
+            DealerCardCreated = true;
+        }         
+        return DealerCardCreated;
+    }
+    
+    public static boolean checkPlayerCardCreation(int CreateCardCall){
+        
+        Game gameTest = new Game("BlackJack");
+        boolean PlayerCardCreated = false;
+        int tempSize = gameTest.gamelogic.PlayerCards.size();
+        if (CreateCardCall == 1){
+            gameTest.gamelogic.newPlayerCard();
+        }
+        if(tempSize < gameTest.gamelogic.PlayerCards.size()){
+            PlayerCardCreated = true;
+        }         
+        return PlayerCardCreated;
     }
 }
